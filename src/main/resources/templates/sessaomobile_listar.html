@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Sessaomobile</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Lista de Sessaomobiles</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Dispositivo_ID</th>
+        <th>Token_Sessao</th>
+        <th>Data_Inicio</th>
+        <th>Ativo</th>
+    </tr>
+
+    <tr th:each="c : ${sessaomobile}">
+        <td th:text="${c.id}"></td>
+        <td th:text="${c.dispositivo_id}"></td>
+        <td th:text="${c.token_sessao}"></td>
+        <td th:text="${c.data_inicio}"></td>
+        <td th:text="${c.ativo}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

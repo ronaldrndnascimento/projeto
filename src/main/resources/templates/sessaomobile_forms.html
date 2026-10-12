@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Novo Sessaomobile</title>
+</head>
+<body>
+
+<h1>Cadastrar Sessaomobile</h1>
+
+<form action="/sessaomobile/salvar" method="post">
+    ID: <input type="text" name="id"><br>
+    Dispositivo_ID: <input type="text" name="dispositivo_id"><br>
+    Token_Sessao: <input type="text" name="token_sessao"><br>
+    Data_Inicio: <input type="text" name="data_inicio"><br>
+    Ativo: <input type="text" name="ativo"><br>
+
+    <button type="submit">Salvar</button>
+</form>
+
+</body>
+</html>
